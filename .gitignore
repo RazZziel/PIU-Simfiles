@@ -1,8 +1,15 @@
-*.mpg
-*.mp3
-*.png
-*.ogg
-*.jpg
-*.wav
-*.db
+*.[mM][pP][gG]
+*.[mM][pP]4
+*.[mM][pP]3
+*.[pP][nN][gG]
+*.[oO][gG][gG]
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[wW][aA][vV]
+*.[dD][bB]
+
+# Local virtualenv created by Scripts/download_media.py
+Scripts/.venv/
+__pycache__/
+
 16 - PHOENIX/18225 - Pneumonoultramicroscopicsilicovolcanoconiosis ft. Kagamine Len GUMI/BGA and title BLACK Ver/18225c.mp4
