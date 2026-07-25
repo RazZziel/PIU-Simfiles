@@ -12,4 +12,7 @@
 Scripts/.venv/
 __pycache__/
 
+# Downloaded media archives (see Scripts/download_media.py)
+*.zip
+
 16 - PHOENIX/18225 - Pneumonoultramicroscopicsilicovolcanoconiosis ft. Kagamine Len GUMI/BGA and title BLACK Ver/18225c.mp4
