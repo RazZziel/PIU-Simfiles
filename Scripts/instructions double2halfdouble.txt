@@ -1,0 +1,19 @@
+StepF2 Co-op to RIO/Infinity v2.2 & Doubles to HalfDouble v1.01
+Yes you need both files if you want to convert halfdouble only, all the main logic is in the dp2routine file and the other one is just the read/write
+1.01: Hotfix for windows, oops
+
+Features:
+Converts your StepF2 co-op charts to RIO or infinity, obviously. Check the boolean at the top.
+Will convert pump-double to pump-routine
+double2halfdouble will convert pump-double to pump-halfdouble and remove the extra note tracks
+
+Requirements:
+Python 3.10+
+python -m pip install typing_extensions
+
+Q: Will it destroy my charts?
+A: So far, no
+
+Usage on Linux: find . -name '*.ssc' -execdir '/media/arc/PC GAMES/Rave It Out S2 (1.00 THE FINAL)/SongsPIU/dp2routine.py' {} \; or double2halfdouble
+Usage on Windows: Get-ChildItem -Recurse -Filter *.ssc | ForEach-Object { & 'python' './dp2routine.py' $_.FullName } 
+Get-ChildItem -Recurse -Filter *.ssc | ForEach-Object { & 'python' './double2halfdouble.py' $_.FullName } 

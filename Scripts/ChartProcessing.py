@@ -57,6 +57,7 @@ for subdir, dirs, files in os.walk(dir_path):
                         # Reset everything to Edit (prevent difficulty duplicates down the line)
                         for chart in charts:
                             chart.difficulty = "Edit"
+                            chart['LASTSECONDHINT'] = str(songlength)
                             
                         # Mark the highest rated chart up to 5 as Easy for
                         # demonstration screens
@@ -101,7 +102,10 @@ for subdir, dirs, files in os.walk(dir_path):
                             if chart.credit == "":
                                 chart.credit = "ANDAMIRO"
                             
-                            chart.chartstyle = "ACTIVE"
+                            if "UCS" not in chart.description:
+                                if "HIDDEN" not in chart.description:
+                                    chart.chartstyle = "ACTIVE"
+                               
                                 
                             print("Chart: " + redundant + " / Diff: " + chart.difficulty + " / Chart description: " + chart.description)
                             
